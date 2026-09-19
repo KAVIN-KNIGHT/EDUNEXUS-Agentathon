@@ -1,0 +1,27 @@
+[
+  {
+    "text": "Object-Oriented Programming (OOP) in Python\nA small quick-reference guide\n1. What is OOP?\nObject-Oriented Programming is a programming approach that organizes code using classes and\nobjects. It helps combine data and the functions that operate on that data into reusable units.\n2. Class and Object\nA class is a blueprint for creating objects. An object is an instance of a class.\nclass Car:\ndef __init__(self, brand):\nself.brand = brand\ncar1 = Car(\"Toyota\")\nprint(car1.brand)\n3. Constructor: __init__()\nThe __init__() method is a special method that is automatically called when an object is created. It is\ncommonly used to initialize object attributes.\nclass Student:\ndef __init__(self, name, age):\nself.name = name\nself.age = age\n4. The self Keyword\nself refers to the current object. It is used to",
+    "page": 1,
+    "document": "lesson.pdf"
+  },
+  {
+    "text": "self.name = name\nself.age = age\n4. The self Keyword\nself refers to the current object. It is used to access attributes and methods belonging to that object.\nclass Person:\ndef greet(self):\nprint(\"Hello\")\np = Person()\np.greet()\n5. Encapsulation\nEncapsulation means keeping data and related methods together and controlling access to internal data.\nPython commonly uses naming conventions such as a single underscore (_) and name mangling with\ndouble underscores (__).\nclass BankAccount:\ndef __init__(self):\nself.__balance = 0\ndef deposit(self, amount):\nself.__balance += amount\n6. Inheritance\nInheritance allows a child class to reuse attributes and methods from a parent class.\nclass Vehicle:\ndef move(self):\n",
+    "page": 1,
+    "document": "lesson.pdf"
+  },
+  {
+    "text": "(self):\n",
+    "page": 1,
+    "document": "lesson.pdf"
+  },
+  {
+    "text": "print(\"Moving\")\nclass Car(Vehicle):\npass\nc = Car()\nc.move()\n7. Polymorphism\nPolymorphism allows the same method name or interface to behave differently for different objects.\nclass Dog:\ndef sound(self):\nprint(\"Bark\")\nclass Cat:\ndef sound(self):\nprint(\"Meow\")\n8. Abstraction\nAbstraction hides implementation details and exposes only the essential interface. Python provides the\nabc module for defining abstract base classes.\nfrom abc import ABC, abstractmethod\nclass Shape(ABC):\n@abstractmethod\ndef area(self):\npass\n9. Four Main OOP Concepts\nConcept\nMeaning\nEncapsulation\nBundle data and methods; control access\nInheritance\nReuse features from an existing class\nPolymorphism\nSame interface, different behavior\nAbstraction\nHide implementation details\n10. Important Points to Remember\n• Class = blueprin",
+    "page": 2,
+    "document": "lesson.pdf"
+  },
+  {
+    "text": "behavior\nAbstraction\nHide implementation details\n10. Important Points to Remember\n• Class = blueprint; Object = instance of a class.\n• __init__() is commonly used as a constructor/initializer.\n• self refers to the current object.\n• Inheritance promotes code reuse.\n• Polymorphism allows different implementations through a common interface.\n• Abstraction focuses on what an object does rather than how it does it.\n",
+    "page": 2,
+    "document": "lesson.pdf"
+  }
+]
